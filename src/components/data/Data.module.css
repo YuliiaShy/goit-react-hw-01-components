@@ -1,6 +1,6 @@
 .statistics {
     width: 300px;
-    margin: 15px auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     text-align: center;
@@ -24,7 +24,6 @@
     display: flex;
     flex-direction: column;
     padding: 7px;
-    background-color: rgba(183, 191, 195, 0.719);
     width: 50px;
 }
 

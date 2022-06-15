@@ -1,0 +1,29 @@
+.list {
+    width: 340px;
+        margin: 20px auto;
+        padding: 0px;
+}
+
+.item {
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 5px 0px;
+    padding: 0 15px;
+    border: solid rgba(183, 191, 195, 0.719);
+    border-radius: 5px;
+}
+
+.status {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 700;
+}
