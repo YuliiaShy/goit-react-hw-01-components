@@ -18,9 +18,9 @@ export default function FriendList({friends}) {
   );
 }
 
-const FriendListItem = ({ id, name, avatar, isOnline }) => {
+const FriendListItem = ({ name, avatar, isOnline }) => {
  return (
-   <li className={s.item} key={id}>
+   <li className={s.item}>
      <span
        className={s.status}
        style={{ backgroundColor: isOnline ? 'green' : 'red' }}
@@ -35,8 +35,12 @@ const FriendListItem = ({ id, name, avatar, isOnline }) => {
 
 
 FriendList.propTypes = {
-  name: PropTypes.string.isRequired,
+  friends: PropTypes.arrayOf(PropTypes.object.isRequired),
+  id: PropTypes.string,
+};
+
+FriendListItem.propTypes = {
   avatar: PropTypes.string.isRequired,
-  isOnline: PropTypes.number.isRequired,
-  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
 };

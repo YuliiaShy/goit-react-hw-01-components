@@ -3,7 +3,6 @@
     padding: 20px;
     background-color: #fff;
     width: 300px;
-    border-radius: 5px;
     border: solid rgba(183, 191, 195, 0.719)
 }
 
@@ -37,7 +36,7 @@
     justify-content: center;
     list-style: none;
     padding: 0;
-    background-color: rgba(183, 191, 195, 0.719);
+    
 }
 
 .stat {
@@ -46,6 +45,8 @@
     align-items: center;
     padding: 10px;
     width: 80px;
+    margin-right: 5px;
+    background-color: rgba(183, 191, 195, 0.719);
 }
 
 .label {
