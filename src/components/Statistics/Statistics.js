@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import s from 'components/data/Data.module.css';
+import s from 'components/Statistics/Statistics.module.css';
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
@@ -11,8 +11,7 @@ export default function Statistics({ title, stats}) {
     <section className={s.statistics}>
       {title && <h2 className={s.title}>{title}</h2>}
       <ul className={s.list}>
-        {stats.map(({ id, label, percentage }) => {
-          return (
+        {stats.map(({ id, label, percentage }) => (
             <li
               className={s.item}
               key={id}
@@ -21,8 +20,7 @@ export default function Statistics({ title, stats}) {
               <span className={s.label}>{label}</span>
               <span className={s.percentage}>{percentage}</span>
             </li>
-          );
-        })}
+        ))}
       </ul>
     </section>
   );
